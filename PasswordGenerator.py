@@ -17,8 +17,9 @@ for i in range(count_numbers):
     my_password.append(random.choice(numbers))
 for i in range(count_symbols):
     my_password.append(random.choice(symbols))
-
-print(my_password)
+print("Before my password = ", my_password)
+random.shuffle(my_password)
+print("After Shuffle my password is ",my_password)
 
 
 for i in my_password:
